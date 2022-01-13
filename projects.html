@@ -31,96 +31,77 @@
 <div class="row">
   <div class="leftcolumn">
     <h2>Multi-modal image registration</h2>
-    <a href='https://github.com/jkonglab/DigitalPathology'>
         <div class="card">
             <h3>WSI serial slide registration</h3>
             <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
             <p>The introduction of high-throughput scanning technology has allowed for routine digital 3D reconstruction of serial whole slide histology images. However, registration of serial whole slide images is a challenge due to the overwhelmingly large image size. A single image may contain several gigabytes of data. The resulting 3D volumes can easily exceed modern computer memory limits, thus precluding the direct use of existing reconstruction methods. Based on current methods, accessing subvolumes of tissues requires the prior registration of the entire full-resolution whole slide image volume, leading to a high computational cost. To solve this problem, we develop a hierarchical image registration method that computes image deformation on-the-fly. In this way, we can minimize the computational burden and focus analysis on the tissue subvolumes of interest to domain experts. As the nonrigid registration at the low resolution is applied to the rigidly registered image volume and only alignment transformations for all adjacent image pairs are available, we are developing a novel recursive mapping method that maps each pixel in the reference coordinate system to the corresponding location in a target image with use of the mapped nonrigid and rigid propagated transformations from low to high image resolution. In addition, we are also developing a multi-resolution, block-wise registration approach that works in a coarse-to-fine manner for multi-stain image registration.
+              <br><br>
+              <b>[Source code]</b>
+              <a href="https://github.com/jkonglab/DigitalPathology">https://github.com/jkonglab/DigitalPathology</a>
               <br>
-              <br>
-              <h4>[Source code]</h4>
-              https://github.com/jkonglab/DigitalPathology
-              <br>
+              <b>[Demo]</b>
               <a href="https://math.gsu.edu/jkong/research_registration.html">https://math.gsu.edu/jkong/research_registration.html</a>
               </p>
           </div>
 
-    </a>
-
-    <a href='https://github.com/jkonglab/LandMark_Registration'>
       <div class="card">
           <h3>Registration Post-Processing by landmark selection and modification</h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             Three-dimensional (3D) digital pathology has been emerging for next-generation tissue based cancer re- search. To enable such histopathology image volume analysis, serial histopathology slides need to be well aligned. We propose a histopathology image registration fine tuning method with integrated landmark evaluations by texture and spatial proximity measures. Representative anatomical structures and image corner features are first detected as landmark candidates. Next, we identify strong and modify weak matched landmarks by leveraging image texture features and landmark spatial proximity measures. Both qualitative and quantitative results of extensive experiments demonstrate that our proposed method is robust and can further enhance registration accuracy of our previously registered image set. The promising experimental results suggest that our method can be used as a fine tuning module to further boost registration accuracy, a premise of histology spatial and morphology analysis in an information-lossless 3D tissue space for cancer research.
-            <br>
-            <br>
-            <h4>[Source code]</h4>
-            https://github.com/jkonglab/LandMark_Registration
+            <br><br>
+            <b>[Source code]</b>
+            <a href="https://github.com/jkonglab/LandMark_Registration">https://github.com/jkonglab/LandMark_Registration</a>
           </p>
         </div>
-    </a>
 
     <h2>Pathology structure segmentation    </h2>
-    <a href='https://github.com/jkonglab/Steatosis_Segmentation'>
         <div class="card">
             <h3>Liver steatosis segmentation with deep learning methods</h3>
             <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
             <p>
               Liver steatosis is known as the abnormal accumulation of lipids within cells. An accurate quantification of steatosis area within the liver histopathological microscopy images plays an important role in liver disease diagnosis and trans- plantation assessment. Such a quantification analysis often requires a precise steatosis segmentation that is challenging due to abundant presence of highly overlapped steatosis droplets. In this paper, a deep learning model Mask-RCNN is used to segment the steatosis droplets in clumps. Extended from Faster R-CNN, Mask-RCNN can predict object masks in addition to bounding box detection. With transfer learning, the resulting model is promising to support liver disease diagnosis and allograft rejection prediction in future clinical practice.
-              <br>
-            <br>
-            <h4>[Source code]</h4>
-            https://github.com/jkonglab/Steatosis_Segmentation
+              <br><br>
+              <b>[Source code]</b>
+              <a href="https://github.com/jkonglab/Steatosis_Segmentation">https://github.com/jkonglab/Steatosis_Segmentation</a>
             </p>
           </div>
 
-    </a>
-    <a href='https://github.com/jkonglab/Liver_Cancer_Segmentation'>
       <div class="card">
           <h3>HistoCAE: Convolutional Autoencoder Based Segmentation of Viable Tumor Regions in Liver Whole-Slide Images
           </h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             In this study, we present a multi-resolution deep learning model HistoCAE for viable tumor segmentation in whole-slide liver histopathology images. We propose convolutional autoencoder (CAE) based framework with a customized reconstruction loss function for image reconstruction, followed by a classification module to classify each image patch as tumor vs non-tumor. The resulting patch-based prediction results are spatially combined to generate the final segmentation result for each WSI. Our proposed model presents superior performance to other benchmark models with extensive experiments, suggesting its efficacy for viable tumor area segmentation with liver whole-slide images.
-            <br>
-            <br>
-            <h4>[Source code]</h4>
-            https://github.com/jkonglab/Liver_Cancer_Segmentation
+            <br><br>
+            <b>[Source code]</b>
+            <a href="https://github.com/jkonglab/Liver_Cancer_Segmentation">https://github.com/jkonglab/Liver_Cancer_Segmentation</a>
           </p>
         </div>
-    </a>
 
-    <a href='https://github.com/jkonglab/DELINEATE'>
       <div class="card">
           <h3>DELINATE: Deep Learning Based Accurate Hepatic Steatosis Quantification for Histological Assessment of Liver Biopsies </h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             Hepatic steatosis droplet quantification with histology biopsies has high clinical significance for risk stratification and management of patients with fatty liver diseases and in the decision to use donor livers for transplantation. However, pathology reviewing processes, when conducted manually, are subject to a high inter- and intra-reader variability, due to the overwhelmingly large number and significantly varying appearance of steatosis instances. Meanwhile, this process is challenging as there is a large number of overlapped steatosis droplets with either missing or weak boundaries. We propose a deep learning based region-boundary integrated network for precise steatosis quantification with whole slide liver histopathology images. The proposed model consists of two sequential steps: a region extraction and boundary prediction module for foreground regions and steatosis boundary prediction, followed by an aggregated prediction map generation. Missing steatosis boundaries are next recovered from the predicted map and assembled from adjacent image patches to generate results for the whole slide histopathology image. The resulting steatosis measures at both the pixel level and steatosis object level present strong correlation with pathologist annotations, radiology readouts and clinical data. In addition, the count of isolated steatosis objects is shown as a promising alternative measure to the traditional metrics at the pixel level. These results suggest a high potential of AI assisted technology to enhance liver disease decision support using whole slide images.
-            <br>
-            <br>
-            <h4>[Source code]</h4>
-            https://github.com/jkonglab/DELINEATE
+            <br><br>
+            <b>[Source code]</b>
+            <a href="https://github.com/jkonglab/DELINEATE">https://github.com/jkonglab/DELINEATE</a>
           </p>
         </div>
 
-  </a>
-  <a href='https://github.com/jkonglab/Fluorescent_Nuclei_Segregation'>
     <div class="card">
         <h3>Clumped Nuclei Segmentation for Fluorescence Microscopy Images        </h3>
         <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
         <p>
           Highly clumped nuclei captured in fluorescence microscopy images are commonly observed in a wide spectrum of tissue-related biomedical investigations. To ensure the quality of downstream biomedical analyses, it is essential to accurately segment clustered nuclei. However, this presents a technical challenge as fluorescence intensity alone is often insufficient for recovering the true nuclei boundaries. We propose a segmentation algorithm that identifies point pair connection candidates and evaluates adjacent point connections with a formulated ellipse fitting quality indicator. After connection relationships are determined, we recover the resulting dividing paths by following points with specific eigenvalues from the image Hessian in a constrained searching space. Both qualitative and quantitative experimental results suggest that our algorithm is promising for dividing overlapped nuclei in fluorescence microscopy images widely used in various biomedical research
-          <br>
-          <br>
-          <h4>[Source code]</h4>
-          https://github.com/jkonglab/Fluorescent_Nuclei_Segregation
+          <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/jkonglab/Fluorescent_Nuclei_Segregation">https://github.com/jkonglab/Fluorescent_Nuclei_Segregation</a>
         </p>
       </div>
 
-  </a>
 
-  <a href='https://github.com/jkonglab/3D_Liver_Biopsy_Sampling'>
     <div class="card">
         <h3>Computational Pipeline for Liver Needle Biopsy Sampling Error Investigation with Serial Histopathology Whole Slide Images
         </h3>
@@ -129,75 +110,54 @@
           In spite of serving as the "gold-standard" for diagnosis of hepatic fibrosis and cirrhosis, the liver needle biopsy is known to include inaccurate diagnostic information, primarily due to the inexorable sampling bias. However, there is lack of method to gauge such sampling bias as it is infeasible to take a large number of needle biopsies from the same patient. To develop a computational analysis pipeline to enable needle biopsy sampling bias investigations, we construct a 3D virtual liver tissue volume by spatially registered high resolution Whole Slide Images (WSIs) of serial liver tissue sections with a novel dynamic registration method. With spatially aligned serial liver WSIs, we further develop a Virtual Needle Biopsy Sampling function (VNBS) that mimics the needle biopsy sampling process with a physical needle in current clinical practice. Such a virtual sampling function is applied to the reconstructed digital liver image volume for multiple times, each at a distinct tissue location and angle. Additionally, we develop an analysis pipeline to quantitate Collagen Proportionate Area (CPA) in all resulting needle biopsies. All sampled biopsies are manually graded by the Scheuer and Ishak staging methods. With such domain annotations and machine-based collagen fiber quantification results, we investigate the inter- and intra-biopsy variability by the pathology stage score and CPA with a set of 3D virtual needle biopsies and their internal 2D cross sections. Our experimental results suggest the developed computational pipeline can recover the substantial presence of needle biopsy sampling bias in both pathology stage scores and liver CPAs.
           <br>
           Conclusions: The developed virtual liver needle biopsy sampling method provides a new avenue for investigating needle biopsy sampling bias with 3D virtual tissue volumes. Although the developed working pipeline specifically investigates the sampling bias in liver needle biopsy in this study, the presented analysis methods can be tailored to a large scope of other tissue based disease diagnoses where the needle biopsy sampling bias substantially affects the diagnostic results.
-
-          <br>
-          <br>
-          <h4>[Source code]</h4>
-          https://github.com/jkonglab/3D_Liver_Biopsy_Sampling
-
+          <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/jkonglab/3D_Liver_Biopsy_Sampling">https://github.com/jkonglab/3D_Liver_Biopsy_Sampling</a>
         </p>
       </div>
 
-  </a>
 
-  <a href='https://github.com/jkonglab/Foveat_Cell_Segmentation'>
     <div class="card">
         <h3>Foveal Blur-Boosted Segmentation of Nuclei in Histopathology Images with Shape Prior Knowledge and Constraints
         </h3>
         <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
         <p>
           Pathology image analysis is a crucial step to support accurate cancer mechanism research, disease grading, diagnosis, and treatment planning. Although there is a high demand for precise nuclei morphology analyses, nuclei segmentation, the prerequisite step, mostly is completed manually by pathologists in practice. While the newly emerging deep learning algorithms can help automate the process, the lack of sufficient pathology training images with well-annotated ground truth in most tissue-based biomedical research inevitably limits the performance of deep learning systems. In this study, we propose to address this problem by a convolutional neural network with foveal blur, a blurring algorithm mimicking human vision, that enriches datasets with multiple local nuclei regions of interest derived from large pathology images for enhanced nuclei segmentation performance. As the convolutional neural network is not able to explicitly learn the nuclei shape, we propose a human knowledge boosted deep learning system by inclusion to the convolutional neural network new loss function terms capturing shape prior knowledge and imposing smoothness constraints. The high segmentation accuracy and competitive processing speed of our proposed method from three independent datasets suggest its promising potential for automating histopathology nuclei segmentation in biomedical research and clinical settings where efficient high-quality nuclei segmentation are demanded.
-
-        <br>
-        <br>
-        <h4>[Source code]</h4>
-        https://github.com/jkonglab/Foveat_Cell_Segmentation
+          <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/jkonglab/Foveat_Cell_Segmentation">https://github.com/jkonglab/Foveat_Cell_Segmentation</a>
         </p>
       </div>
 
-  </a>
-
-  <a href='https://math.gsu.edu/jkong/research_cell_segmentation.html'>
     <div class="card">
         <h3>Cell Segmentation with Sparse Shape Prior and Dynamic Occlusion Constraint
         </h3>
         <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
         <p>
           We have developed a complete and fully automated method for simultaneous segmentation of multiple nuclei in histology images with mutual occlusion. This method framework consists of a seed detection algorithm for nuclei contour initialization, and an integrated contour deformable model that incorporates region, shape, and boundary information. The developed nucleus seed detection algorithm utilizes joint information of spatial connectivity, distance constraint, image edge map, and a shape-based voting map derived from eigenvalue analysis of Hessian matrix across multiple scales. In the resulting nuclei segmentation step, a sparse representation-based shape term is introduced to better guide nuclei contour convergence with shape prior information from the shape library. All shape representations are clustered with an L1 graph-based manifold learning method to establish a concise and representative shape prior library. A dynamic nuclei occlusion term is proposed in the level set-based variational model to dynamically deal with occlusion events involving a variable number of nuclei. In-detail theoretical derivation for level set functional optimization and offer a solution to optimize the loss function. A numerical optimization algorithm is used to iteratively search for the desired level set functions. Experiments on histopathologic images produce better results as compared with other state of the arts, suggesting the effectiveness of our detection and segmentation approach for cell analysis with histopathologic images
-
-        <br>
-        <br>
-        <h4>[Source code]</h4>
-        https://math.gsu.edu/jkong/research_cell_segmentation.html
+          <br><br>
+          <b>[Demo]</b>
+          <a href="https://math.gsu.edu/jkong/research_cell_segmentation.html">https://math.gsu.edu/jkong/research_cell_segmentation.html</a>
         </p>
       </div>
 
-  </a>
-
 
     <h2>Prediction analysis</h2>
-    <a href='https://github.com/jkonglab/PCR_Prediction_MRI_Molecular_Demographics'>
         <div class="card">
             <h3>Prediction of Pathological Complete Response to Neoadjuvant Chemotherapy in Breast Cancer Using Deep Learning with Integrative Imaging, Molecular and Demographic Data
             </h3>
             <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
             <p>
               Neoadjuvant chemotherapy is widely used to reduce tumor size to make surgical excision manageable and to minimize distant metastasis. Assessing and accurately predicting pathological complete response is important in treatment planning for breast cancer patients. We propose a novel approach integrating 3D MRI imaging data, molecular data and demographic data using convolutional neural network to predict the likelihood of pathological complete response to neoadjuvant chemotherapy in breast cancer. We take post-contrast T1-weighted 3D MRI images without the need of tumor segmentation, and incorporate molecular subtypes and demographic data. In our predictive model, MRI data and non-imaging data are convolved to inform each other through interactions, instead of a concatenation of multiple data type channels. This is achieved by channel-wise multiplication of the intermediate results of imaging and non-imaging data. Our model significantly outperforms models using imaging data only or traditional concatenation models. Our approach has the potential to aid physicians to identify patients who are likely to respond to neoadjuvant chemotherapy at diagnosis or early treatment, thus facilitate treatment planning, treatment execution, or mid-treatment adjustment.
-
-            <br>
-            <br>
-            <h4>[Source code]</h4>
-            https://github.com/jkonglab/PCR_Prediction_MRI_Molecular_Demographics
+              <br><br>
+              <b>[Source code]</b>
+              <a href="https://github.com/jkonglab/PCR_Prediction_MRI_Molecular_Demographics">https://github.com/jkonglab/PCR_Prediction_MRI_Molecular_Demographics</a>
             </p>
           </div>
 
-    </a>
-
-
     <h2>Spatial data management and analytics</h2>
-    <a href='https://github.com/tengdj/3DPro'>
       <div class="card">
-          <h3>3DPro - Scalable 3D Data Management and Queries for 3D Tissue Maps at Extreme Scale
+          <h3>3DPro: Scalable 3D Data Management and Querying Tool for 3D Tissue Maps at Extreme Scale
           </h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
@@ -205,121 +165,72 @@
             <br>
             We developed 3DPro, an efficient and scalable 3D data management and querying system for 3D objects. 3DPro represents 3D objects with multi-levels of details (LODs) with progressive compression, with  progressive LOD query conditions. A skeleton based approach is used to preserve the structure for partitioning complex structures such as vessels, which guides the creation of multiple minimal bounding boxes for fine grained approximation of the shape. This significantly reduces distance based computations. 3DPro uses a novel Filter-Progressive-Refine paradigm to minimize geometric computation, which can provide early returns of accurate results from lower resolution whenever possible. If a result could not be determined from a LOD, the query will further proceed to the next level of LOD with higher resolution.  A memory centered approach is used for data management and querying processing to mitigate I/O cost. Meanwhile, 3DPro is designed for parallelization, supporting both GPU based parallelism and CPU level parallelism
 
-          <br>
+          <!--<br>
           <img src="spatial.png" alt="Spatial Image" style="width:60%;height:300px;">
-          <br>
-          <h4>[Source code]</h4>
-          Github: https://github.com/tengdj/3DPro<br>
-          <br>
-          Publications: <br>
-          Coming soon (http://bmidb.cs.stonybrook.edu/3dpro/index)
-
+          <br>-->
+          <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/tengdj/3DPro">https://github.com/tengdj/3DPro</a>
           </p>
         </div>
 
-    </a>
-    <a href='https://github.com/StonyBrookDB/iSPEED'>
+
       <div class="card">
-          <h3>iSPEED: In-Memory Based Spatial Queries for Large-Scale 3D Data
+          <h3>iSPEED:  In-Memory Based Spatial Querying Software for Large-Scale 3D Data
           </h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             The goal of the project iSPEED is to create effective and scalable in-memory 3D spatial data processing methods with 3D data compression, 3D indexing methods, and partitioning level parallelism for multiple big data platforms including Hadoop and Spark, to support fast discovery of spatial patterns of 3D pathology objects. To achieve low latency, iSPEED stores data in memory with effective progressive compression for each individual 3D object with successive levels of detail, and provides global spatial indexing in memory through effective partitioning. An in-memory 3D spatial query engine will be invoked on-demand to run many instances in parallel. The query parallelization is implemented with, but not limited to, MapReduce and Spark. At run time, iSPEED will dynamically decompress required 3D objects only at the specified LOD, and create necessary spatial indexes in-memory to accelerate query processing, including object-level indexing (inter-objects) and structural indexing (intra-object) on complex structured objects. iSPEED significantly improves 3D spatial query performance compared to traditional Hadoop based approach.
 
-          <br>
-          <br>
-          <h4>[Source code]</h4>
-          https://github.com/StonyBrookDB/iSPEED
-          <br>
-          <br>
-          Publications: <br>
-          <ul>
-            <li>Yanhui Liang, Hoang Vo, Jun Kong and Fusheng Wang: iSPEED: a Scalable and Distributed In-Memory Based Spatial Query System for Large and Structurally Complex 3D Data. Demo Paper. In Proceedings of the 44th International Conference on Very Large Data Bases (VLDB 2018), August 27-31, 2018, Rio de Janeiro, Brazil.
-            </li>
-            <li>Yanhui Liang, Hoang Vo, Jun Kong and Fusheng Wang: iSPEED: an Efficient In-Memory Based Spatial Query System for Large-Scale 3D Data with Complex Structures. In Proceedings of SIGSPATIAL 2017. November 7 - 10, 2017, Redondo Beach, California, USA.
-            </li>
-          </ul>
-          </p>
+            <br><br>
+            <b>[Source code]</b>
+            <a href="https://github.com/StonyBrookDB/iSPEED">https://github.com/StonyBrookDB/iSPEED</a>
+            <br>
+            <b>[Documentation]</b>
+            <a href="http://bmidb.cs.stonybrook.edu/ispeed/index">http://bmidb.cs.stonybrook.edu/ispeed/index</a>
+            </p>
         </div>
 
-    </a>
 
-
-    <a href='https://github.com/StonyBrookDB/sparkgis'>
       <div class="card">
-          <h3>SparkGIS: High Performance Distributed Spatial Data Warehousing and Query Processing System over Apache Spark</h3>
+          <h3>SparkGIS: A High Performance Distributed Spatial Querying System over Apache Spark</h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             SparkGIS is a spatial data querying system for high throughput and low latency spatial query processing built on Apache Spark. SparkGIS takes advantage of the in-memory processing capabilities of Spark by adapting the core querying methods of Hadoop-GIS to Spark. One research goal for SparkGIS is to solve the problem of memory constraint as performance will drop significantly when data does not fit into memory. SparkGIS takes a spatial query rewriting approach to break a big query into small ones that can can fit into memory and be pipelined combining compressed binary data storage in-memory. SparkGIS supports common spatial queries including range, spatial join and k-nearest neighbor search and can be extended to other complex query pipelines. On-demand in-memory indexes allow SparkGIS to prune input data and apply compute intensive operations on only a subset of relevant spatial objects and consequently achieve higher performance. SparkGIS employs a layered architecture that enables system extensibility for seamless integration of auxiliary distributed computation.
+          <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/StonyBrookDB/sparkgis">https://github.com/StonyBrookDB/sparkgis</a>
           <br>
-          <br>
-          <h4>[Source code]</h4>
-          Github: https://github.com/StonyBrookDB/sparkgis<br>
-          Publications:<br>
-          <ul>
-            <li>          Furqan Baig, Hoang Vo, Tahsin Kurc, Joel Saltz and Fusheng Wang: SparkGIS: Resource Aware Efficient In-Memory Spatial Query Processing. In Proceedings of SIGSPATIAL 2017. November 7 - 10, 2017, Redondo Beach, California, USA.
-            </li>
-            <li>          Furqan Baig, Mudit Mehrotra, Hoang Vo, Fusheng Wang, Joel Saltz, and Tahsin Kurc. "SparkGIS: Efficient comparison and evaluation of algorithm results in tissue image analysis studies." In VLDB Workshop on Big Graphs Online Querying, pp. 134-146. Springer International Publishing, 2015.
-            </li>
-          </ul>
-
-
+          <b>[Documentation]</b>
+          <a href="http://bmidb.cs.stonybrook.edu/sparkgis/index">http://bmidb.cs.stonybrook.edu/sparkgis/index</a>
           </p>
         </div>
 
-    </a>
 
-    <a href='https://github.com/StonyBrookDB/hadoopgis/'>
       <div class="card">
-          <h3>Hadoop-GIS: MapReduce Based Scalable Spatial Queries for Tissue Imaging          </h3>
-          <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+          <h3>Hadoop-GIS: A MapReduce Based Scalable 2D Spatial Querying Tool for Tissue Imaging</h3>
           <p>
             Hadoop-GIS is a scalable and high performance spatial data warehousing system for running large scale spatial queries on Hadoop. Hadoop-GIS supports multiple types of spatial queries on MapReduce through spatial partitioning, customizable spatial query engine RESQUE, implicit parallel spatial query execution on MapReduce, and effective methods for amending query results through handling boundary objects. Hadoop-GIS utilizes global partition indexing and customizable on demand local spatial indexing to achieve efficient query processing.
 
-          <br>
-          <br>
-          <h4>[Source code]</h4>
-          Github: https://github.com/StonyBrookDB/hadoopgis/
-            <br>
-          Publications:<br>
-          <ul>
-            <li>Ablimit Aji, Xiling Sun, Hoang Vo, Qiaoling Liu, Rubao Lee, Xiaodong Zhang, Joel Saltz and Fusheng Wang: Demonstration of Hadoop-GIS: A Spatial Data Warehousing System Over MapReduce. Demo Paper, To Appear in Proceedings of the 21st ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL GIS 2013), November 5-8, 2013, Orlando, Florida, USA.
-            </li>
-            <li>Ablimit Aji, Fusheng Wang, Hoang Vo, Rubao Lee, Qiaoling Liu, Xiaodong Zhang, Joel Saltz: Hadoop-GIS: A Spatial Data Warehousing System Over MapReduce. Accepted. The 39th International Conference on Very Large Databases (VLDB'2013), Trento, Italy, August 26-30, 2013. 
-            </li>
-            <li>Ablimit Aji, Fusheng Wang and Joel Saltz: Towards Building a High Performance Spatial Query System for Large Scale Medical Imaging Data. In Proceedings of the 20th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL GIS 2012), Redondo Beach, California, USA, November 6-9, 2012.
-            </li>
-          </ul>
-
+          <b>[Source code]</b>
+           <a href="https://github.com/StonyBrookDB/hadoopgis">https://github.com/StonyBrookDB/hadoopgis/</a>
+           <br>
+          <b>[Documentation]</b>
+           <a href="http://bmidb.cs.stonybrook.edu/hadoopgis/index">[Documentation]:http://bmidb.cs.stonybrook.edu/hadoopgis/index</a>
           </p>
         </div>
 
-    </a>
-
-    <a href='https://github.com/tengdj/IDEAL'>
       <div class="card">
           <h3>IDEAL: a Vector-Raster Hybrid Model for Efficient Spatial Queries over Complex Polygons
           </h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             IDEAL is a vector-raster hybrid approach through information-preserving rasterization. The rasterization not only converts a polygon to a grid of pixels, but also maintains information between rasterized pixels (raster) and the polygon (vector) on spatial relationship (interior, boundary or exterior), intersected edges, and vertices of the intersected edges at the pixel level. Indeed, the raster model not only works as a grid index but also provides sufficient knowledge for conducting geometric computations over only part of the polygon primitives. By building spatial querying methods with such a hybrid approach, the query performance and throughput can be significantly improved.
-
-          <br>
-          <br>
-          <h4>[Source code]</h4>
-          Github: https://github.com/tengdj/IDEAL
-          <br>
-
-          Publications:<br>
-          <ul>
-            <li>Dejun Teng, Furqan Baig, Qiheng Sun, Jun Kong and Fusheng Wang: "IDEAL: a Vector-Raster Hybrid Model for Efficient Spatial Queries over Complex Polygons." In Proceedings of the 22nd IEEE International Conference on Mobile Data Management (MDM 2021).
-            </li>
-          </ul>
-
+            <br><br>
+          <b>[Source code]</b>
+          <a href="https://github.com/tengdj/IDEAL">https://github.com/tengdj/IDEAL</a>
           </p>
         </div>
-
-    </a>
 
 
 
