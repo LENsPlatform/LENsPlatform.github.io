@@ -6,6 +6,13 @@ a {
   text-decoration: inherit;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
