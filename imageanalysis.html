@@ -125,35 +125,35 @@ img {
       <div class="col-md-12">
         <div >
 
-		<p style="color:#00acd9">  
-		  i3 provides a suite of whole slide image analysis methods, including detection and segmentation of pathology structures, 
+		<p>  
+		  I3 provides a suite of whole slide image analysis methods, including detection and segmentation of pathology structures, 
 		such as nuclei, cells, clumped histology objects, vessels, and registration of serial slides from various modalities.  <br>
-		<img src="images/imageanalysis.jpg" alt="i3"  width=""300">  
+		<img  src="images/imageanalysis.jpg" alt="i3" width="600">  
 		</p>
 		
-		<h2 style="color:#00acd9">Multi-modal image registration</h2>
+		<h2 style="color:#4f98b5">Multi-modal image registration</h2>
 
-		<h3>Dynamic WSI Serial Slide Registration</h3>
+		<h3 style="color:#00acd9">Dynamic WSI Serial Slide Registration</h3>
 		<p>
 			The introduction of high-throughput scanning technology has allowed for routine digital 3D reconstruction of serial whole slide histology images. However, registration of serial whole slide images is a challenge due to the overwhelmingly large image size. A single image may contain several gigabytes of data. The resulting 3D volumes can easily exceed modern computer memory limits, thus precluding the direct use of existing reconstruction methods. Based on current methods, accessing subvolumes of tissues requires the prior registration of the entire full-resolution whole slide image volume, leading to a high computational cost. To solve this problem, we develop a hierarchical image registration method that computes image deformation on-the-fly. In this way, we can minimize the computational burden and focus analysis on the tissue subvolumes of interest to domain experts. As the nonrigid registration at the low resolution is applied to the rigidly registered image volume and only alignment transformations for all adjacent image pairs are available, we have developed a novel recursive mapping method that maps each pixel in the reference coordinate system to the corresponding location in a target image with use of the mapped nonrigid and rigid propagated transformations from low to high image resolution. In addition, we are also developing a multi-resolution, block-wise registration approach that works in a coarse-to-fine manner for multi-stain image registration.
 		</p>
 		<p><b>Source code</b>: <a href="https://github.com/jkonglab/DigitalPathology">https://github.com/jkonglab/DigitalPathology</a></p>
 		<p><b>Demo</b>: <a href="https://math.gsu.edu/jkong/research_registration.html">https://math.gsu.edu/jkong/research_registration.html</a></p>
 
-		<h3>Registration Post-processing by Landmark Selection and Modification</h3>
+		<h3 style="color:#00acd9">Registration Post-processing by Landmark Selection and Modification</h3>
 		<p>
 			3D digital pathology has been emerging for next-generation tissue based cancer re- search. To enable such histopathology image volume analysis, serial histopathology slides need to be well aligned. We propose a histopathology image registration fine tuning method with integrated landmark evaluations by texture and spatial proximity measures. Representative anatomical structures and image corner features are first detected as landmark candidates. Next, we identify strong and modify weak matched landmarks by leveraging image texture features and landmark spatial proximity measures. Both qualitative and quantitative results of extensive experiments demonstrate that our proposed method is robust and can further enhance registration accuracy of our previously registered image set. The promising experimental results suggest that our method can be used as a fine tuning module to further boost registration accuracy, a premise of histology spatial and morphology analysis in an information-lossless 3D tissue space for cancer research.
 		</p>
 		<p>Source code: <a href=" https://github.com/jkonglab/LandMark_Registration"> https://github.com/jkonglab/LandMark_Registration</a></p>
 
 
-		<h3>Deep Learning based Registration Model for Immunohistochemistry Histopathology Images</h3>
+		<h3 style="color:#00acd9">Deep Learning based Registration Model for Immunohistochemistry Histopathology Images</h3>
 		<p>
 		Registration of whole-slide Immunohistochemistry (IHC) images is an essential prerequisite for serial slide integra- tion analysis. However, the overwhelming size and artifacts in such images make the registration process challenging. We have developed HistoRegNet, an end-to-end unsuper- vised patch-based deep learning registration model, to spatially align IHC histopathology images. For efficacy demonstration, HistoRegNet is trained with image patches from 50 IHC whole-slide images that highlight mouse liver fibrosis tissues by the Sirius red stain. For model training, we use Normalized Cross-Correlation (NCC) as the similarity metric. The performance of HistoRegNet is com- pared with multiple state-of-the-art conventional as well as deep leaning methods by both image similarity measures (e.g. NCC, and normalized mutual information) and region over- lap measures such as Dice coefficient. Experimental results demonstrate the superior performance of our proposed model to other methods, suggesting its promising potential for IHC histopathology image registration.		</p>
 		<p><b>Source code</b>: coming soon...
 		</p>
 
-		<h3>Deep Learning based Multi-stain Whole-slide Histopathology Image Registration</h3>
+		<h3 style="color:#00acd9">Deep Learning based Multi-stain Whole-slide Histopathology Image Registration</h3>
 		<p>
 		We have proposed a novel translation based fully unsupervised synthetic mono-modal image registration 
 		approach for serial whole-slide microscopy images in different stains. The registration approach 
@@ -173,11 +173,11 @@ img {
         <div >
 
 
-		<h2 style="color:#00acd9">Pathology structure segmentation</h2>
+		<h2 style="color:#4f98b5">Pathology structure segmentation</h2>
 		
 		
 
-      <h3>DELINATE: Deep Learning Based Accurate Hepatic Steatosis Quantification for Histological Assessment of Liver Biopsies </h3>
+      <h3 style="color:#00acd9">DELINATE: Deep Learning Based Accurate Hepatic Steatosis Quantification for Histological Assessment of Liver Biopsies </h3>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
       <p>
         Hepatic steatosis droplet quantification with histology biopsies has high clinical significance for risk stratification and management of patients with fatty liver diseases and in the decision to use donor livers for transplantation. However, pathology reviewing processes, when conducted manually, are subject to a high inter- and intra-reader variability, due to the overwhelmingly large number and significantly varying appearance of steatosis instances. Meanwhile, this process is challenging as there is a large number of overlapped steatosis droplets with either missing or weak boundaries. We propose a deep learning based region-boundary integrated network for precise steatosis quantification with whole slide liver histopathology images. The proposed model consists of two sequential steps: a region extraction and boundary prediction module for foreground regions and steatosis boundary prediction, followed by an aggregated prediction map generation. Missing steatosis boundaries are next recovered from the predicted map and assembled from adjacent image patches to generate results for the whole slide histopathology image. The resulting steatosis measures at both the pixel level and steatosis object level present strong correlation with pathologist annotations, radiology readouts and clinical data. In addition, the count of isolated steatosis objects is shown as a promising alternative measure to the traditional metrics at the pixel level. These results suggest a high potential of AI assisted technology to enhance liver disease decision support using whole slide images.
@@ -186,7 +186,7 @@ img {
         <a href="https://github.com/jkonglab/DELINEATE">https://github.com/jkonglab/DELINEATE</a>
       </p>
 
-        <h3>HistoCAE: Convolutional Autoencoder Based Segmentation of Viable Tumor Regions in Liver Whole-Slide Images
+        <h3 style="color:#00acd9">HistoCAE: Convolutional Autoencoder Based Segmentation of Viable Tumor Regions in Liver Whole-Slide Images
         </h3>
         <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
         <p>
@@ -197,7 +197,7 @@ img {
         </p>
 
 
-          <h3>Liver steatosis segmentation with deep learning methods</h3>
+          <h3 style="color:#00acd9">Liver steatosis segmentation with deep learning methods</h3>
           <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
           <p>
             Liver steatosis is known as the abnormal accumulation of lipids within cells. An accurate quantification of steatosis area within the liver histopathological microscopy images plays an important role in liver disease diagnosis and trans- plantation assessment. Such a quantification analysis often requires a precise steatosis segmentation that is challenging due to abundant presence of highly overlapped steatosis droplets. In this paper, a deep learning model Mask-RCNN is used to segment the steatosis droplets in clumps. Extended from Faster R-CNN, Mask-RCNN can predict object masks in addition to bounding box detection. With transfer learning, the resulting model is promising to support liver disease diagnosis and allograft rejection prediction in future clinical practice.
@@ -206,7 +206,7 @@ img {
             <a href="https://github.com/jkonglab/Steatosis_Segmentation">https://github.com/jkonglab/Steatosis_Segmentation</a>
           </p>
 
-            <h3>Foveal Blur-Boosted Segmentation of Nuclei in Histopathology Images with Shape Prior Knowledge and Constraints
+            <h3 style="color:#00acd9">Foveal Blur-Boosted Segmentation of Nuclei in Histopathology Images with Shape Prior Knowledge and Constraints
             </h3>
             <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
             <p>
@@ -217,7 +217,7 @@ img {
             </p>
 
 
-            <h3>Cell Segmentation with Sparse Shape Prior and Dynamic Occlusion Constraint
+            <h3 style="color:#00acd9">Cell Segmentation with Sparse Shape Prior and Dynamic Occlusion Constraint
             </h3>
             <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
             <p>
@@ -227,7 +227,7 @@ img {
               <a href="https://math.gsu.edu/jkong/research_cell_segmentation.html">https://math.gsu.edu/jkong/research_cell_segmentation.html</a>
             </p>
 
-      <h3>Clumped Nuclei Segmentation for Fluorescence Microscopy Images        </h3>
+      <h3 style="color:#00acd9">Clumped Nuclei Segmentation for Fluorescence Microscopy Images        </h3>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
       <p>
         Highly clumped nuclei captured in fluorescence microscopy images are commonly observed in a wide spectrum of tissue-related biomedical investigations. To ensure the quality of downstream biomedical analyses, it is essential to accurately segment clustered nuclei. However, this presents a technical challenge as fluorescence intensity alone is often insufficient for recovering the true nuclei boundaries. We propose a segmentation algorithm that identifies point pair connection candidates and evaluates adjacent point connections with a formulated ellipse fitting quality indicator. After connection relationships are determined, we recover the resulting dividing paths by following points with specific eigenvalues from the image Hessian in a constrained searching space. Both qualitative and quantitative experimental results suggest that our algorithm is promising for dividing overlapped nuclei in fluorescence microscopy images widely used in various biomedical research
@@ -236,7 +236,7 @@ img {
         <a href="https://github.com/jkonglab/Fluorescent_Nuclei_Segregation">https://github.com/jkonglab/Fluorescent_Nuclei_Segregation</a>
       </p>
 
-      <h3>Computational Pipeline for Liver Needle Biopsy Sampling Error Investigation with Serial Histopathology Whole Slide Images
+      <h3 style="color:#00acd9">Computational Pipeline for Liver Needle Biopsy Sampling Error Investigation with Serial Histopathology Whole Slide Images
       </h3>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
       <p>
