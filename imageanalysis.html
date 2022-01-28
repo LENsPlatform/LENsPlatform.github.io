@@ -2,12 +2,12 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="i3framework">
-  
+
   <meta name="author" content="i3framework.github.io">
 
   <title>Whole Slide Image Analysis</title>
@@ -26,10 +26,10 @@
   <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
-  
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  
+
   <style>
 img {
   display: block;
@@ -72,34 +72,34 @@ img {
 									<ul class="dropdown-menu">
 										<li><a href="imageanalysis.html">Image Analysis</a></li>
 										<li><a href="spatialanalytics.html">Spatial Analytics</a></li>
-										<li><a href="predictiveanalytics.html">Predictive Analytics</a></li>										
+										<li><a href="predictiveanalytics.html">Predictive Analytics</a></li>
 									</ul>
-								</li>	
-	
+								</li>
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software<span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="softwareoverview.html">Software Releases</a></li>
 										<li><a href="portal.html">Web Portal</a></li>
 									</ul>
-								</li>	
-								
-								
-								
+								</li>
+
+
+
 								<li><a href="modelcards.html">Model Cards</a></li>
 
-								
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training<span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="trainingoverview.html">Training Overview</a></li>
 										<li><a href="presentations.html">Presentations</a></li>
 										<li><a href="videos.html">Training Videos</a></li>
-										<li><a href="challenge.html">Grand Challenges</a></li>								
+										<li><a href="challenge.html">Grand Challenges</a></li>
 									</ul>
-								</li>	
+								</li>
 
-								<li><a href="team.html">Team</a></li>							
+								<li><a href="team.html">Team</a></li>
 
 							</ul>
 							</div><!-- /.navbar-collapse -->
@@ -119,18 +119,18 @@ img {
 
 
 <section class="portfolio-single-page section-sm">
-	
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div >
 
-		<p>  
-		  I3 provides a suite of whole slide image analysis methods, including detection and segmentation of pathology structures, 
+		<p>
+		  I3 provides a suite of whole slide image analysis methods, including detection and segmentation of pathology structures,
 		such as nuclei, cells, clumped histology objects, vessels, and registration of serial slides from various modalities.  <br>
-		<img  src="images/imageanalysis.jpg" alt="i3" width="600">  
+		<img  src="images/imageanalysis.jpg" alt="i3" width="600">
 		</p>
-		
+
 		<h2 style="color:#4f98b5">Multi-modal image registration</h2>
 
 		<h3 style="color:#00acd9">Dynamic WSI Serial Slide Registration</h3>
@@ -147,35 +147,37 @@ img {
 		<p>Source code: <a href=" https://github.com/jkonglab/LandMark_Registration"> https://github.com/jkonglab/LandMark_Registration</a></p>
 
 
+    <h3 style="color:#00acd9">Deep Learning based Multi-stain Whole-slide Histopathology Image Registration</h3>
+		<p>
+		We have proposed a novel translation based fully unsupervised synthetic mono-modal image registration
+		approach for serial whole-slide microscopy images in different stains. The registration approach
+		is unsupervised since no prior deformation field information is needed for training the deep learning models.
+		We have compared our method performance with multiple standard deep learning based models and demonstrated
+		our method superiority in both quantitative and qualitative manner.
+  </p>
+  <p>Source code: <a href=" https://github.com/jkonglab/MultiStain_WSI_Registration_CycleGAN"> https://github.com/jkonglab/MultiStain_WSI_Registration_CycleGAN</a></p>
+
+
 		<h3 style="color:#00acd9">Deep Learning based Registration Model for Immunohistochemistry Histopathology Images</h3>
 		<p>
 		Registration of whole-slide Immunohistochemistry (IHC) images is an essential prerequisite for serial slide integra- tion analysis. However, the overwhelming size and artifacts in such images make the registration process challenging. We have developed HistoRegNet, an end-to-end unsuper- vised patch-based deep learning registration model, to spatially align IHC histopathology images. For efficacy demonstration, HistoRegNet is trained with image patches from 50 IHC whole-slide images that highlight mouse liver fibrosis tissues by the Sirius red stain. For model training, we use Normalized Cross-Correlation (NCC) as the similarity metric. The performance of HistoRegNet is com- pared with multiple state-of-the-art conventional as well as deep leaning methods by both image similarity measures (e.g. NCC, and normalized mutual information) and region over- lap measures such as Dice coefficient. Experimental results demonstrate the superior performance of our proposed model to other methods, suggesting its promising potential for IHC histopathology image registration.		</p>
 		<p><b>Source code</b>: coming soon...
 		</p>
 
-		<h3 style="color:#00acd9">Deep Learning based Multi-stain Whole-slide Histopathology Image Registration</h3>
-		<p>
-		We have proposed a novel translation based fully unsupervised synthetic mono-modal image registration 
-		approach for serial whole-slide microscopy images in different stains. The registration approach 
-		is unsupervised since no prior deformation field information is needed for training the deep learning models. 
-		We have compared our method performance with multiple standard deep learning based models and demonstrated 
-		our method superiority in both quantitative and qualitative manner.
-		<p><b>Source code</b>:coming soon...
-		</p>
 
         </div>
       </div>
     </div>
-	
-	
+
+
 	  <div class="row">
       <div class="col-md-12">
         <div >
 
 
 		<h2 style="color:#4f98b5">Pathology structure segmentation</h2>
-		
-		
+
+
 
       <h3 style="color:#00acd9">DELINATE: Deep Learning Based Accurate Hepatic Steatosis Quantification for Histological Assessment of Liver Biopsies </h3>
       <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
@@ -267,7 +269,7 @@ img {
 	</div>
 </footer>
 
-    <!-- 
+    <!--
     Essential Scripts
     =====================================-->
 
