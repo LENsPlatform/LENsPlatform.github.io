@@ -2,12 +2,12 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="i3framework">
-  
+
   <meta name="author" content="i3framework.github.io">
 
   <title>i3 Web Portal</title>
@@ -26,10 +26,10 @@
   <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
-  
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  
+
   <style>
 img {
   display: block;
@@ -72,35 +72,35 @@ img {
 									<ul class="dropdown-menu">
 										<li><a href="imageanalysis.html">Image Analysis</a></li>
 										<li><a href="spatialanalytics.html">Spatial Analytics</a></li>
-										<li><a href="predictiveanalytics.html">Predictive Analytics</a></li>										
+										<li><a href="predictiveanalytics.html">Predictive Analytics</a></li>
 									</ul>
-								</li>	
-								
-	
+								</li>
+
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Software<span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="softwareoverview.html">Software Releases</a></li>
 										<li><a href="portal.html">Web Portal</a></li>
 									</ul>
-								</li>	
-								
-								
-								
+								</li>
+
+
+
 								<li><a href="modelcards.html">Model Cards</a></li>
 
-								
+
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training<span class="ion-ios-arrow-down"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="trainingoverview.html">Training Overview</a></li>
 										<li><a href="presentations.html">Presentations</a></li>
 										<li><a href="videos.html">Training Videos</a></li>
-										<li><a href="challenge.html">Grand Challenges</a></li>									
+										<li><a href="challenge.html">Grand Challenges</a></li>
 									</ul>
-								</li>	
+								</li>
 
-								<li><a href="team.html">Team</a></li>							
+								<li><a href="team.html">Team</a></li>
 
 							</ul>
 							</div><!-- /.navbar-collapse -->
@@ -115,47 +115,51 @@ img {
   <img src="images/bar.jpg" alt="i3" style="width:100%;">
   <div class="centered"><h2>i3 Web Portal</h2></div>
 </div>
- 
+
 <section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div >
-		<img class="img-responsive"  src="images/webportal.jpg" alt="Web Portal" class="center"> 
+		<img class="img-responsive"  src="images/webportal.jpg" alt="Web Portal" class="center">
 		<p>
 		Significant advancements in high-throughput tissue scanning technologies have enabled the imaging and analysis of tissues at cellular and subcellular levels of detail. A large number of studies using data derived from such high-resolution tissue images have produced characterizations of tumor microenvironments and tissue structure profiles that mirror molecular tumor signatures and disease progression patterns. In the oncology setting, histopathologic microscopy imaging data has become a prominent data modality that is critical for extreme-scale quantitative disease progression mechanism analyses, as well as disease diagnosis and prognosis. To capture such high levels of tissue structure detail, modern high-throughput scanners produce gigapixel-sized images of whole-slide tissue sections at a high resolution, typically at 40x objective magnification. The formidable size of the data captured in these high-resolution images has presented challenges in data analysis feasibility and performance. Traditional manual analyses of pathologic hallmarks have often become unfeasible due to the gigapixel image size and the high degree of inter- and intra-reader variability in this qualitative process. Therefore, automated computerized image analysis algorithms have emerged in the field of digital pathology as a means to more accurately assess pathologic features captured in high-resolution tissue images that may be relevant to diagnosis or prognosis in clinical settings.
 		</p>
-		
+
 		<p>
 		The challenges in working with such large-scale image files make web and distributed cloud-based applications a suitable alternative for histopathology image storage, management, and analysis. First, web applications have high availability and are accessible from any modern web-enabled device without any prior installation or configuration. Second, web-based frameworks facilitate the storage and portability of large amounts of data, as uploaded files are stored in a central cloud server, reducing the storage burden of individual users and the need for sustained local storage of large datasets. Large amounts of data can be made accessible to others without actually copying or transferring datasets. Likewise, the obstacle of sharing large files with collaborators is no longer an issue, as data can be shared within seconds via access-granting links. Last and most importantly, with a web application, users do not need powerful local computational resources. A remote web application architecture allowing users to access a shared cluster of computational facilities can help address the computational challenges in whole-slide histopathology image analysis.
 		</p>
-		
+
 		<p>
 		Another factor limiting full utilization of microscopy data is that almost all current tissue-based studies and commercial microscopy image analysis tools are constrained by the two-dimensional (2D) image space, causing significant loss of morphology and spatial information from the intrinsic tissue space. Three-dimensional (3D) microscopes were recently proposed to represent the information-lossless 3D tissue space by 3D microscopy image volumes. This novel concept has significant potential to enhance cancer research, as a large set of cancer biology research has demonstrated the importance of 3D histopathology features in the diagnosis of clinical outcomes. These 3D histopathology features include 3D structure volume scale, morphology features, spatial organizations, and alignment directionality.
 		</p>
-		
+
 		<p>
 		To address limitations above, we have been actively developing Digital Pathology Laboratory (dpLAB) as an online workbench to facilitate the end-to-end analysis pipeline of pathology image data in a variety of formats and modalities, including 2D, 3D, and spectroscopy microscopy images. Using dpLAB, users can upload and store their image data in a cloud-based server, remotely run computationally-expensive analysis algorithms using a distributed server cluster and export and share their results for further use. Users can either upload their algorithms or use dpLAB analysis algorithm library as a code-free, and "wrapper" web interface, thereby encouraging usage, distribution, and validation of new algorithms in both research and clinical contexts. The platform addresses critical needs in the field of digital pathology by providing a publicly-accessible data analysis and management web service to the research and clinical community at large. We intend to continue the development of dpLAB by providing more analysis integration features across imaging, clinical, and genomic data, expanding the library of available open-source algorithms, and improving support for more programming languages and image formats.
 		</p>
-		
+
 		<p>
 		We have prototyped a publicly available web computing platform. This online platform creates a lab-in-a-browser solution that can be used by teams of researchers and clinicians to upload, manage, annotate, share, and visualize image data as well as perform experiments and run image analyses directly within a web browser. In this project, we will incorporate all I3 software tools into the platform, and extend the storage and computational power to support pilot studies from the community. Users can submit a request to evaluate I3 with new pilot studies; once approved, users will be able to upload their own data based on instructions and constraints.
 		</p>
-		
+
 		<b>Demo:</b>
-		<p>
-		<a href="https://dplab.gsu.edu">https://dplab.gsu.edu</a>
+    <p>
+    <a href="https://dplab.gsu.edu/demo">3D WSI Visualization: https://dplab.gsu.edu/demo</a>
+    </p>
+
+    <p>
+		<a href="https://dplab.gsu.edu">Full Web Application: https://dplab.gsu.edu</a>
 		</p>
 		
 		<p>
-		<a href="https://jkonglab.github.io/DigitalPathology/">https://jkonglab.github.io/DigitalPathology/</a>
+		<a href="https://jkonglab.github.io/DigitalPathology/">Github Demo: https://jkonglab.github.io/DigitalPathology/</a>
 		</p>
-		
+
 		<b>Source code:</b>
 		<p>
 		<a href="https://github.com/jkonglab/DigitalPathology">https://github.com/jkonglab/DigitalPathology</a>
 		</p>
-		
+
         </div>
       </div>
     </div>
@@ -177,7 +181,7 @@ img {
 	</div>
 </footer>
 
-    <!-- 
+    <!--
     Essential Scripts
     =====================================-->
 
